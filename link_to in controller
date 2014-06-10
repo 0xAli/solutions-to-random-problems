@@ -1,0 +1,5 @@
+I wanted to link to a controller inside a controller not the view.
+
+Here is how: http://stackoverflow.com/a/14996160/736564
+
+By using view_context.link_to()
