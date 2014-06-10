@@ -1,0 +1,25 @@
+Sometimes wordpress load just kills the MySQL instance and gives you the infamous "Error establishing a database connection" error.
+
+So here is a workaround to fix it http://askubuntu.com/a/451889
+
+
+***************** Copy of solution ****************
+#!/bin/bash
+if [[ ! "$(service mysql status)" =~ "start/running" ]]
+then
+    service mysql start
+fi
+
+Be sure that is executable:
+
+chmod +x /path/to/script
+
+Then add a new entry in the root crontab as follow:
+
+    Edit root crontab file using:
+
+    sudo crontab -e
+
+    And add the following line to the file:
+
+    */1 * * * * /path/to/script
