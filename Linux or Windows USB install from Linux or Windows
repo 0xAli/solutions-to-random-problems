@@ -1,0 +1,5 @@
+To install linux/windows when you are on windows use Rufus http://rufus.akeo.ie/
+
+And to do a USB install of linux from linux use UNetbootin http://unetbootin.sourceforge.net/
+
+And to do a usb install of windows from linux use winusb http://askubuntu.com/a/381560
