@@ -1,0 +1,14 @@
+By editing /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+
+Add this to it if you want hibernation
+
+[Enable Hibernate]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+Or remove it if you wanna disable it
+
+
+Via http://www.howtogeek.com/113923/how-to-re-enable-hibernate-in-ubuntu-12.04/
