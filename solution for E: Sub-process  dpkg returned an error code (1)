@@ -1,0 +1,12 @@
+So i was hacking my way to install a package and it broke my pkg, i got the error:
+"Processing triggers for XXXX ...
+Errors were encountered while processing:
+ troubled-pkg
+E: Sub-process /usr/bin/dpkg returned an error code (1)"
+
+solution is by running:
+dpkg --remove --force-all troubled-pkg
+
+
+Where troubled-pkg is the package that caused the problem
+http://blog.bodhizazen.net/linux/apt-get-how-to-fix-very-broken-packages/
