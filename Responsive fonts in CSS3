@@ -1,0 +1,4 @@
+Before CSS3 there was no way to make the fonts stay the same with different without doing @media(max-width: 1580px) { body{ font-size:15px; } }
+And it was tiring thing to specify font size for each resolution, because using percentage simply won't work.
+
+But in css3 there is aa new value which is the viewport-percentage lengths http://dev.w3.org/csswg/css-values/#viewport-relative-lengths
