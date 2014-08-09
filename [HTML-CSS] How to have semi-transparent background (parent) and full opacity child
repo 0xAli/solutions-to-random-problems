@@ -1,0 +1,4 @@
+Don't use opacity: css attribute.
+
+Use background-color:rgba(0, 0, 0, 0.7); on parent
+And background-color:rgba(255, 255, 255, 1); on child
