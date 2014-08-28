@@ -1,0 +1,7 @@
+If you do customize the textarea you will need to get rid of it.
+
+
+
+resize: none;
+
+http://stackoverflow.com/a/12767448/736564
