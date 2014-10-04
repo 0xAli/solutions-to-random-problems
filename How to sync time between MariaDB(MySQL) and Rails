@@ -17,6 +17,8 @@ Run this to know the timezones available:
 rake time:zones:all
 
 
+Don't forget to restart both the MySQL service and the Rails server.
+
 Reference
 http://stackoverflow.com/a/19075291
 http://stackoverflow.com/a/2512481
