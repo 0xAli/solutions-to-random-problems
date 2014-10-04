@@ -1,0 +1,22 @@
+Get your timezone (in my case it's UTC +02:00 Or Cairo)
+
+Edit my.cnf 
+
+Put this under [mysqld]
+default_time_zone='+2:00'
+
+Run this in mysql shell:
+SET GLOBAL time_zone = '+2:00';
+SET @@global.time_zone='+2:00';
+
+Now in Rails' config/application.rb add this:
+config.time_zone = 'Cairo'
+
+
+Run this to know the timezones available:
+rake time:zones:all
+
+
+Reference
+http://stackoverflow.com/a/19075291
+http://stackoverflow.com/a/2512481
