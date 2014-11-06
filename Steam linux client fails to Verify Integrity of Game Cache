@@ -1,5 +1,7 @@
 Known issue https://github.com/ValveSoftware/steam-for-linux/issues/2515
 
+It's because your distro is encrypting /home and thus steam can't recognize it well..
+
 Solution: Create a new library
 Settings -> Download -> Steam library folders
 And create a new folder
