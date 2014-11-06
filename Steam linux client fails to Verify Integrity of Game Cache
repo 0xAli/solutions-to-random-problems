@@ -1,0 +1,9 @@
+Known issue https://github.com/0xAli/solutions-to-random-problems/new/master
+
+Solution: Create a new library
+Settings -> Download -> Steam library folders
+And create a new folder
+Then copy your /home/$(whoami)/.local/share/Steam/SteamApps directory contents into the newly created SteamApps
+And you can then delete the contents of the old folder.
+
+And when you are installing a new game, steam will prompt to ask you where you wanna install it, choose the new one
