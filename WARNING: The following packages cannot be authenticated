@@ -1,0 +1,7 @@
+Facing this weird bug while updating linux Mint
+
+"WARNING: The following packages cannot be authenticated!
+linux"
+
+So that was resolved by removing the package
+ http://ubuntuforums.org/showthread.php?t=2198859&p=12897151#post12897151
