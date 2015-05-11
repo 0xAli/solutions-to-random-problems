@@ -1,0 +1,27 @@
+sudo apt-get install bcmwl-kernel-source
+
+
+sudo gedit /etc/modules
+ 
+Comment #b43
+
+And add "wl" in a new line
+
+
+And in
+/etc/modprobe.d/broadcom-sta-common.conf
+# wl module from Broadcom conflicts with ssb
+# We must blacklist the following modules:
+blacklist b43
+blacklist b43legacy
+blacklist b44
+blacklist bcma
+blacklist brcm80211
+blacklist brcmsmac
+blacklist ssb
+
+Then as root
+modprobe -r b44 b43 b43legacy ssb
+modprobe wl
+
+And reboot
