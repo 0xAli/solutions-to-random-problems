@@ -1,0 +1,11 @@
+
+
+sudo apt-add-repository ppa:ubuntu-audio-dev/alsa-daily
+sudo apt-get update
+sudo apt-get install oem-audio-hda-daily-dkms
+http://forums.linuxmint.com/viewtopic.php?f=48&t=198142#p1029020
+
+sudo aptitude --purge reinstall linux-sound-base alsa-base alsa-utils linux-image-`uname -r` linux-ubuntu-modules-`uname -r` libasound2
+
+
+https://help.ubuntu.com/community/SoundTroubleshooting
