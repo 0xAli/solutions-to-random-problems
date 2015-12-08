@@ -1,0 +1,11 @@
+Fresh new install and the newly created homepage
+
+ExecJS::ProgramError in Home#main
+
+Showing C:/Sites/X/app/views/layouts/application.html.erb where line #6 raised:
+
+TypeError: Object doesn't support this property or method
+  (in C:/Sites/X/app/assets/javascripts/home.js.coffee)
+
+Solution is to change application to default in application.html.erb
+http://stackoverflow.com/a/28436913
