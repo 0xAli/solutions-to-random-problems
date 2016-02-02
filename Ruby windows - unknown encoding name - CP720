@@ -1,0 +1,9 @@
+So i get the error:
+ERROR:  While executing gem ... (ArgumentError)
+    unknown encoding name - CP720
+    
+Fix:
+chcp 1252
+
+
+http://stackoverflow.com/a/22861206
