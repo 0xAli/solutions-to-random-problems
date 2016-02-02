@@ -1,0 +1,19 @@
+Windows + Ruby + Twitter API
+
+Error:
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.16.0/lib/twitter/rest/request.rb:37:in `rescue in perform': SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certifi
+cate verify failed (Twitter::Error)
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.16.0/lib/twitter/rest/request.rb:32:in `perform'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.16.0/lib/twitter/search_results.rb:27:in `initialize'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.16.0/lib/twitter/rest/search.rb:31:in `new'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.16.0/lib/twitter/rest/search.rb:31:in `search'
+        from francorizor.rb:8:in `<main>'
+
+
+Fix:
+Download http://curl.haxx.se/ca/cacert.pem
+
+
+set SSL_CERT_FILE=C:\RailsInstaller\cacert.pem
+
+http://stackoverflow.com/a/25024362
