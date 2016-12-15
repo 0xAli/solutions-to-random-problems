@@ -1,0 +1,2 @@
+Make one NAT (And forward the ports) and make one bridged.
+Then you can access fhe NAT'd one with the IP of the host IP.
