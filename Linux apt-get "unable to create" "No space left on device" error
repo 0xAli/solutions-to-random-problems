@@ -1,0 +1,16 @@
+So i got the weird error:
+
+dpkg: error processing archive /var/cache/apt/archives/linux-headers-4.4.0-57_4.4.0-57.78_all.deb (--unpack):
+ error creating directory './usr/src/linux-headers-4.4.0-57/drivers/gpu/drm/tdfx': No space left on device
+No apport report written because the error message indicates a disk full error
+                                                                              dpkg-deb: error: subprocess paste was killed by signal (Broken pipe)
+Errors were encountered while processing:
+ /var/cache/apt/archives/linux-headers-4.4.0-57_4.4.0-57.78_all.deb
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+
+And i had enough space.
+
+Turns out i am out of inodes (Figure it out by using df -i)
+
+I zipped some backup directories and removed the files and saved some inodes and installed without problem.
